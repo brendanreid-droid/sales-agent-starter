@@ -1,0 +1,71 @@
+{
+  "_comment": "Sapia.ai Claude Desktop MCP Configuration Template",
+  "_note": "Replace all placeholder values (marked ...) with real credentials. Store actual credentials in environment variables or a secrets manager - never commit API keys to shared storage.",
+  "_salesforce_note": "Salesforce intentionally excluded from this config to prevent customer data exposure. Add only if your IT team has reviewed and approved.",
+
+  "mcpServers": {
+
+    "salesloft": {
+      "_comment": "Native SalesLoft MCP - requires Agentic package. Admin must enable in SalesLoft admin panel first.",
+      "command": "npx",
+      "args": ["-y", "@salesloft/mcp-server@latest"],
+      "env": {
+        "SALESLOFT_API_KEY": "..."
+      }
+    },
+
+    "hubspot": {
+      "_comment": "Official HubSpot MCP - OAuth 2.0. Set up via HubSpot app marketplace.",
+      "type": "http",
+      "url": "https://mcp.hubspot.com",
+      "env": {
+        "HUBSPOT_ACCESS_TOKEN": "..."
+      }
+    },
+
+    "lusha": {
+      "_comment": "Official Lusha MCP. Get API key from Lusha API Hub -> API -> Manage API Keys.",
+      "type": "http",
+      "url": "https://mcp.lusha.com",
+      "env": {
+        "LUSHA_API_KEY": "..."
+      }
+    },
+
+    "gong": {
+      "_comment": "Gong MCP. Get Access Key and Secret from Gong Settings -> API. Used for voice matching and calibration.",
+      "command": "npx",
+      "args": ["-y", "gong-mcp@latest"],
+      "env": {
+        "GONG_ACCESS_KEY": "...",
+        "GONG_SECRET": "..."
+      }
+    },
+
+    "slack": {
+      "_comment": "Official Slack MCP. Authenticate via Claude Desktop -> Customize -> Connectors or directly here.",
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp"
+    },
+
+    "brave-search": {
+      "_comment": "Brave Search for open-web research by the Research Analyst. Get API key at brave.com/search/api",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "..."
+      }
+    },
+
+    "filesystem": {
+      "_comment": "Filesystem MCP - grants agents read/write access to the Knowledge Vault. Update the path to match your local vault location.",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/YOURUSERNAME/Documents/Sales/Claude Sale Agent/Sapia-Sales-Vault"
+      ]
+    }
+
+  }
+}

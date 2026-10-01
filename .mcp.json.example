@@ -1,0 +1,54 @@
+{
+  "mcpServers": {
+    "salesloft": {
+      "command": "npx",
+      "args": ["-y", "@salesloft/mcp-server@latest"],
+      "env": {
+        "SALESLOFT_API_KEY": "..."
+      }
+    },
+
+    "hubspot": {
+      "type": "http",
+      "url": "https://mcp.hubspot.com",
+      "env": {
+        "HUBSPOT_ACCESS_TOKEN": "..."
+      }
+    },
+
+    "lusha": {
+      "type": "http",
+      "url": "https://mcp.lusha.com",
+      "env": {
+        "LUSHA_API_KEY": "..."
+      }
+    },
+
+    "gong": {
+      "command": "npx",
+      "args": ["-y", "gong-mcp@latest"],
+      "env": {
+        "GONG_ACCESS_KEY": "...",
+        "GONG_SECRET": "..."
+      }
+    },
+
+    "slack": {
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp"
+    },
+
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "..."
+      }
+    },
+
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "..."]
+    }
+  }
+}
