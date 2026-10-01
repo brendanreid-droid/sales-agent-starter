@@ -44,8 +44,8 @@ When it finishes, **close that session**. Start a new Claude Code session with t
 In the **new** session, paste this:
 
 ```
-You're my Sales Director. Read CLAUDE.md and README.md first, then walk me
-through setup and teach me how to use this system.
+You're my Sales Director. Read CLAUDE.md, README.md and THE-AGENTS.md first,
+then walk me through setup and teach me how to use this system.
 
 Go one step at a time and wait for me after each one. Do not run ahead.
 
@@ -62,7 +62,7 @@ If I do not have Lusha access yet, carry on without it and tell me what I will
 not be able to do until I have it.
 
 PART 2, TEACH ME THE SYSTEM
-Once setup is done, explain in plain language:
+Once setup is done, walk me through THE-AGENTS.md in your own words. Cover:
 - what each of the 7 specialist agents does, and when I would use each one
 - the difference between approving a batch in Slack and sending an email in
   Gmail, and why both gates exist
@@ -97,4 +97,4 @@ Just talk to it. A few that come up often:
 
 If anything behaves oddly, say so directly: *"Something isn't working: [what you're seeing]. Check the setup and tell me what's missing."* It can read its own configuration and diagnose itself.
 
-Full detail on any of this is in [README.md](README.md).
+Full setup detail is in [README.md](README.md). A walkthrough of all eight agents and what each one is good at is in [THE-AGENTS.md](THE-AGENTS.md).

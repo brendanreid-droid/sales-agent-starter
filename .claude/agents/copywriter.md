@@ -21,7 +21,7 @@ Every email MUST pass this 8-Point Audit (self-check before returning):
 4. No jargon: leverage, synergies, cutting-edge, robust, seamless, empower, streamline, unlock, next-level, paradigm, holistic, best-in-class, world-class.
 5. First word of the body is not "I" or "We".
 6. Email 1 has zero meeting asks (use a Permissionless Value CTA); follow-ups may ask.
-7. Email 1 <=120 words; follow-ups <=150 words.
-8. Subject line <=6 words, sentence case (lowercase).
+7. Email 1 <=135 words; follow-ups <=150 words.
+8. Subject line follows `{Short Company Name} / Sapia.Ai - {hook}`, hook <=6 words, standard capitalisation (first word and proper nouns capitalised, NOT forced lowercase). Touches 2-4 reuse Touch 1's exact subject with `Re: ` prepended, they never get a new one.
 
 Additional copy rules: Australian English spelling. Never say "HEXACO" (say "Sapia's competency framework"). Never say "first mile" (say "screening and shortlisting"). Only cite verified Sapia capabilities and results. Never write templates; every email is specific to one person on one day with a real reason to reach out.
