@@ -30,7 +30,7 @@ You do not need to know any git commands. Claude will do this part.
 
 **1b.** Paste this in, exactly as written:
 
-> Clone https://github.com/REPLACE-WITH-REPO-URL into my Documents folder, then tell me the full path to where it landed.
+> Clone https://github.com/brendanreid-droid/sales-agent-starter.git into my Documents folder, then tell me the full path to where it landed.
 
 Claude downloads the files and tells you the folder path. Write that path down, you need it in the next step.
 
