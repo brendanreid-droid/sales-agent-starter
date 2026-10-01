@@ -22,6 +22,8 @@ Allow about 30 minutes for setup, most of it waiting on sign-in screens.
 
 ---
 
+> **Want the fast version?** [START-HERE.md](START-HERE.md) has two copy-paste prompts that do the whole install and then teach you the system. This README is the detailed reference behind them.
+
 ## Step 1: Get the files onto your machine
 
 You do not need to know any git commands. Claude will do this part.
